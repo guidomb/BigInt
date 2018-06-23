@@ -15,7 +15,7 @@ let package = Package(
         .library(name: "BigInt", targets: ["BigInt"])
     ],
     dependencies: [
-        .package(url: "https://github.com/attaswift/SipHash", from: "1.2.1")
+        .package(url: "https://github.com/guidomb/SipHash", .branch("master"))
     ],
     targets: [
         .target(name: "BigInt", dependencies: ["SipHash"], path: "sources"),
